@@ -1,3 +1,7 @@
+# lantern cronet-go fork
+
+This is a fork of https://github.com/SagerNet/cronet-go to allow it to be build as a part of Lantern.
+
 # cronet-go
 
 Cronet is the Chromium network stack made available to Android apps as a library. Cronet takes advantage of multiple
