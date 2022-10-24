@@ -120,3 +120,8 @@ func (e Engine) AddRequestFinishListener(listener URLRequestFinishedInfoListener
 func (e Engine) RemoveRequestFinishListener(listener URLRequestFinishedInfoListener) {
 	C.Cronet_Engine_RemoveRequestFinishedListener(e.ptr, listener.ptr)
 }
+
+// Sets the certificate verifier. Must be called prior to StartWithParams.
+func (e Engine) SetMockCertVerifierForTesting(v *verifier) {
+	C.Cronet_Engine_SetMockCertVerifierForTesting(e.ptr, v.ptr)
+}
